@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <!--Este es el titulo-->
+        <title> Mi primera pagina web</title>
+        <link link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+    </head>
+    <body>
+        <h1>Hola mundo!</h1>
+        
+        <a href="{{ url_for('inicio')}}"> Inicio </a> <!--Para linkear al html de inicio--> 
+        <a href="{{ url_for('contacto')}}"> Contacto </a> <!--Para linkear al html de contacto-->
+
+        <h2>Mi nombre es Gabi</h2>
+        <h3>Y estoy en Penguin porque quiero aprender a programar</h3>
+
+        <img src="static/perrito.jpg" alt="Perrito pomeranian con lentes" width="550" height="480">
+    </body>
+</html>
